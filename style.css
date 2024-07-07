@@ -220,3 +220,64 @@ form button:hover {
         display: block;
     }
 }
+/* Resume Section Styles */
+#resume {
+    padding: 30px 0;
+    background: #e9ecef;
+}
+
+#resume h2 {
+    text-align: center;
+    font-size: 2em;
+}
+
+.resume-section {
+    width: 90%;
+    margin: auto;
+}
+
+.resume-section h3 {
+    margin-top: 20px;
+    font-size: 1.5em;
+    color: #333;
+}
+
+.resume-section p, .resume-section ul {
+    margin-left: 20px;
+    font-size: 1.1em;
+}
+
+.resume-section ul {
+    list-style-type: disc;
+}
+
+.resume-section .experience, .resume-section .education, .resume-section .projects, .resume-section .certifications {
+    margin-bottom: 20px;
+}
+
+.resume-section h4 {
+    font-size: 1.3em;
+    margin-bottom: 5px;
+    color: #555;
+}
+
+.resume-section p em {
+    font-style: normal;
+    color: #666;
+}
+
+.resume-section .skills-list {
+    list-style-type: none;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.resume-section .skills-list li {
+    background: #29a598;
+    color: white;
+    padding: 10px 15px;
+    margin: 5px;
+    border-radius: 5px;
+}
+
