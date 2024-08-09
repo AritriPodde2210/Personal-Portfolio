@@ -14,14 +14,14 @@
 </head>
 <body>
     <header>
-        <div class="container page-header d-flex justify-content-between align-items-center">
-            <input type="checkbox" id="click">
-            <label for="click" class="menu">☰</label>
+        <div class=" page-header">
+            <!-- <input type="checkbox" id="click"> -->
+            <!-- <label for="click" class="menu">☰</label> -->
             <div class="download-resume">
                 <a href="https://drive.google.com/file/d/1b5FMQY5mnHe2iXE9G_VTjibl2wQ3Tam4/view?usp=sharing" class="btn btn-primary" download>Download Resume</a>
             </div>
             <ul>
-                <li><a href="#home" class="active">Home</a></li>
+                <!-- <li><a href="#home" class="active">Home</a></li> -->
                 <li><a href="#about">About</a></li>
                 <li><a href="#skills">Skills</a></li>
                 <li><a href="#projects">Projects</a></li>
@@ -30,12 +30,12 @@
         </div>
     </header>
 
-    <section class="container main" id="home">
-        <div>
-            <h2>Hi, I'm </h2>
-            <h1>ARITRI PODDER</h1>
-            <h4>I'm an aspiring software engineer.</h4>
-            <br>
+    <section class="main" id="home">
+        <div class="grid-item1">
+            <h2>Hi</h2>
+            <h1>I'm <span>ARITRI PODDER</span></h1>
+            <h4>an aspiring Software Engineer</h4>
+            <!-- <br> -->
             <div class="social">
                 <a href="https://www.linkedin.com/in/aritri-podder-749887226" class="fab fa-linkedin"></a>
                 <a href="https://github.com/AritriPodde2210" class="fab fa-github"></a>
@@ -43,12 +43,12 @@
                 <a href="https://leetcode.com/u/Aritripodder/" class="fab fa-leetcode"></a>
             </div>
         </div>
-        <div>
+        <div class="grid-item2">
             <img src="profilepic.jpeg" alt="Profile Picture" class="profile-picture">
         </div>
     </section>
 
-    <section class="container" id="about">
+    <section class="about-section" id="about">
         <h2>About Me</h2>
         <p>Hello! I'm a budding software engineer with a focus on developing innovative solutions and real-world projects.
             I have worked on some machine learning projects and am learning machine learning and some web development technologies for my skills development.
@@ -61,43 +61,47 @@
         </p>
     </section>
 
-    <section class="container skills" id="skills">
-        <h2 class="mb-3">Skills</h2>
-        <div class="row">
-            <div class="card mx-auto text-bg-warning mb-3" style="width: 18rem;">
-                <div class="card-body">
-                  <h5 class="card-title"><i class="fab fa-java"></i> Core Java</h5>
-                    <p class="card-text">Java is one of the finest object-oriented programming languages. I am quite comfortable solving problems with Java.</p>
+    <section class="skills" id="skills">
+        <h2 class="">Skills</h2>
+        <div class="">
+            <div>
+                <div class="">
+                    <div class="card-body">
+                        <h5 class="card-title"><i class="fab fa-java"></i> Core Java</h5>
+                        <p class="card-text">Java is one of the finest object-oriented programming languages. I am quite comfortable solving problems with Java.</p>
+                    </div>
+                </div>
+                <div class="">
+                    <div class="card-body">
+                        <h5 class="card-title"><i class="fa-solid fa-terminal"></i> C Programming</h5>
+                        <p class="card-text">This is the first programming language from which I have gained knowledge about problem-solving.</p>
+                    </div>
+                </div>
+                <div class="">
+                    <div class="card-body">
+                        <h5 class="card-title"><i class="fas fa-database"></i> Database Management Systems</h5>
+                        <p class="card-text">I have a strong interest in databases. I am quite good in SQL and have worked with MySQL, MS SQL Server.</p>
+                    </div>
                 </div>
             </div>
-            <div class="card mx-auto text-bg-warning mb-3" style="width: 18rem;">
-                <div class="card-body">
-                  <h5 class="card-title"><i class="fa-solid fa-terminal"></i> C Programming</h5>
-                    <p class="card-text">This is the first programming language from which I have gained knowledge about problem-solving.</p>
+            <div>
+                <div class="">
+                    <div class="card-body">
+                        <h5 class="card-title"><i class="fab fa-python"></i> Python</h5>
+                        <p class="card-text">Python is a simple and high-level programming language. I have worked with some ML projects and got introduced to some Python libraries.</p>
+                    </div>
                 </div>
-            </div>
-            <div class="card mx-auto text-bg-warning mb-3" style="width: 18rem;">
-                <div class="card-body">
-                  <h5 class="card-title"><i class="fas fa-database"></i> Database Management Systems</h5>
-                    <p class="card-text">I have a strong interest in databases. I am quite good in SQL and have worked with MySQL, MS SQL Server.</p>
+                <div class="">
+                    <div class="card-body">
+                        <h5 class="card-title"><i class="fas fa-brain"></i> Machine learning</h5>
+                        <p class="card-text">Learning and researching different machine learning models and technologies.</p>
+                    </div>
                 </div>
-            </div>
-            <div class="card mx-auto text-bg-warning mb-3" style="width: 18rem;">
-                <div class="card-body">
-                  <h5 class="card-title"><i class="fab fa-python"></i> Python</h5>
-                    <p class="card-text">Python is a simple and high-level programming language. I have worked with some ML projects and got introduced to some Python libraries.</p>
-                </div>
-            </div>
-            <div class="card mx-auto text-bg-warning mb-3" style="width: 18rem;">
-                <div class="card-body">
-                  <h5 class="card-title"><i class="fas fa-brain"></i> Machine learning</h5>
-                    <p class="card-text">Learning and researching different machine learning models and technologies.</p>
-                </div>
-            </div>
-            <div class="card mx-auto text-bg-warning mb-3" style="width: 18rem;">
-                <div class="card-body">
-                  <h5 class="card-title"><i class="fab fa-html5"></i> HTML</h5>
-                    <p class="card-text">HTML (HyperText Markup Language) is the standard language used to create and design web pages.</p>
+                <div class="">
+                    <div class="card-body">
+                        <h5 class="card-title"><i class="fab fa-html5"></i> HTML</h5>
+                        <p class="card-text">HTML (HyperText Markup Language) is the standard language used to create and design web pages.</p>
+                    </div>
                 </div>
             </div>
         </div>
@@ -113,7 +117,7 @@
                         <ul>
                             <li>Developed a monitoring system with my team integrating YOLOv8s for object detection and LSTM for motion detection to enhance patient safety and streamline monitoring in ICU environments.</li></ul>
                             
-                           <ul><li>Tech Used: Python, OpenCV, YOLOv8, LSTM, Roboflow, Flask (API)</li>
+                            <ul><li>Tech Used: Python, OpenCV, YOLOv8, LSTM, Roboflow, Flask (API)</li>
                         </ul>
                     </p>
                     <a href="https://github.com/AritriPodde2210/TeleICU-Patient-Monitoring-System" class="btn btn-primary">Github</a>
@@ -124,11 +128,11 @@
                     <h5 class="card-title">University Management System</h5>
                     <p class="card-text">
                         <ul>
-                          <li>
+                            <li>
                             <ul><li>Developed a desktop based application to manage university administrative and academic activities.</li></ul>
                             <br>
                             <ul><li>Tech Used: Java, Java Swing (GUI development), JFrame, MySQL</li></ul>
-                     </li>
+                        </li>
                         </ul>
                     </p>
                     <a href="https://github.com/AritriPodde2210/universitymanagementsystem" class="btn btn-primary">Github</a>
