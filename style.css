@@ -61,26 +61,6 @@ header {
 .page-header ul{
     margin: 0;
 }
-
-/* Target the .page-header bar links when the corresponding section is in view */
-.page-header ul li a[href*="#home"]:target ~ .page-header ul li a[href*="#home"] {
- /* Add an active style for the link */
-    background-color: #333;
-    color: #fff;
-}
-
-.page-header ul li a[href*="#about"]:target ~ .page-header ul li a[href*="#about"] {
-  /* Add an active style for the link */
-    background-color: #333;
-    color: #fff;
-}
-
-.page-header ul li a[href*="#contact"]:target ~ .page-header ul li a[href*="#contact"] {
-  /* Add an active style for the link */
-    background-color: #333;
-    color: #fff;
-}
-
 .main {
     width: 100%;
     min-height: 100vh;
