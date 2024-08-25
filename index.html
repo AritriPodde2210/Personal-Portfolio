@@ -14,9 +14,9 @@
 </head>
 <body>
     <header>
-        <div class="container page-header d-flex justify-content-between align-items-center">
-            <input type="checkbox" id="click">
-            <label for="click" class="menu">☰</label>
+        <div class=" page-header">
+            <!-- <input type="checkbox" id="click"> -->
+            <!-- <label for="click" class="menu">☰</label> -->
             <div class="download-resume">
                 <a href="https://drive.google.com/file/d/1b5FMQY5mnHe2iXE9G_VTjibl2wQ3Tam4/view?usp=sharing" class="btn btn-primary" download>Download Resume</a>
             </div>
@@ -30,12 +30,12 @@
         </div>
     </header>
 
-    <section class="container main" id="home">
-        <div>
-            <h2>Hi, I'm </h2>
-            <h1>ARITRI PODDER</h1>
-            <h4>I'm an aspiring software engineer.</h4>
-            <br>
+    <section class="main" id="home">
+        <div class="grid-item1">
+            <h2>Hi</h2>
+            <h1>I'm <span>ARITRI PODDER</span></h1>
+            <h4>an aspiring Software Engineer</h4>
+            <!-- <br> -->
             <div class="social">
                 <a href="https://www.linkedin.com/in/aritri-podder-749887226" class="fab fa-linkedin"></a>
                 <a href="https://github.com/AritriPodde2210" class="fab fa-github"></a>
@@ -43,12 +43,12 @@
                 <a href="https://leetcode.com/u/Aritripodder/" class="fab fa-leetcode"></a>
             </div>
         </div>
-        <div>
+        <div class="grid-item2">
             <img src="profilepic.jpeg" alt="Profile Picture" class="profile-picture">
         </div>
     </section>
 
-    <section class="container" id="about">
+    <section class="about-section" id="about">
         <h2>About Me</h2>
         <p>Hello! I'm a budding software engineer with a focus on developing innovative solutions and real-world projects.
             I have worked on some machine learning projects and am learning machine learning and some web development technologies for my skills development.
@@ -61,49 +61,53 @@
         </p>
     </section>
 
-    <section class="container skills" id="skills">
-        <h2 class="mb-3">Skills</h2>
-        <div class="row">
-            <div class="card mx-auto text-bg-warning mb-3" style="width: 18rem;">
+    <section class="skills" id="skills">
+        <h2 class="">Skills</h2>
+        <div class="skill-grid">
+            <div class="grid-item">
                 <div class="card-body">
-                  <h5 class="card-title"><i class="fab fa-java"></i> Core Java</h5>
+                    <h5 class="card-title"><i class="fab fa-java"></i> Core Java</h5>
                     <p class="card-text">Java is one of the finest object-oriented programming languages. I am quite comfortable solving problems with Java.</p>
                 </div>
             </div>
-            <div class="card mx-auto text-bg-warning mb-3" style="width: 18rem;">
+            <div class="grid-item">
                 <div class="card-body">
-                  <h5 class="card-title"><i class="fa-solid fa-terminal"></i> C Programming</h5>
-                    <p class="card-text">This is the first programming language from which I have gained knowledge about problem-solving.</p>
+                    <h5 class="card-title"><i class="fa-solid fa-terminal"></i> C Programming</h5>
+                    <p class="card-text">This is the first programming language from which I have gained knowledge about
+                    problem-solving.</p>
                 </div>
             </div>
-            <div class="card mx-auto text-bg-warning mb-3" style="width: 18rem;">
+            <div class="grid-item">
                 <div class="card-body">
-                  <h5 class="card-title"><i class="fas fa-database"></i> Database Management Systems</h5>
+                    <h5 class="card-title"><i class="fas fa-database"></i> Database Management Systems</h5>
                     <p class="card-text">I have a strong interest in databases. I am quite good in SQL and have worked with MySQL, MS SQL Server.</p>
                 </div>
             </div>
-            <div class="card mx-auto text-bg-warning mb-3" style="width: 18rem;">
+            <div class="grid-item">
                 <div class="card-body">
-                  <h5 class="card-title"><i class="fab fa-python"></i> Python</h5>
-                    <p class="card-text">Python is a simple and high-level programming language. I have worked with some ML projects and got introduced to some Python libraries.</p>
+                    <h5 class="card-title"><i class="fab fa-python"></i> Python</h5>
+                    <p class="card-text">Python is a simple and high-level programming language. I have worked with some
+                        ML projects and got introduced to some Python libraries.</p>
                 </div>
             </div>
-            <div class="card mx-auto text-bg-warning mb-3" style="width: 18rem;">
+            <div class="grid-item">
                 <div class="card-body">
-                  <h5 class="card-title"><i class="fas fa-brain"></i> Machine learning</h5>
-                    <p class="card-text">Learning and researching different machine learning models and technologies.</p>
+                    <h5 class="card-title"><i class="fas fa-brain"></i> Machine learning</h5>
+                    <p class="card-text">Learning and researching different machine learning models and technologies.
+                    </p>
                 </div>
             </div>
-            <div class="card mx-auto text-bg-warning mb-3" style="width: 18rem;">
+            <div class="grid-item">
                 <div class="card-body">
-                  <h5 class="card-title"><i class="fab fa-html5"></i> HTML</h5>
-                    <p class="card-text">HTML (HyperText Markup Language) is the standard language used to create and design web pages.</p>
+                    <h5 class="card-title"><i class="fab fa-html5"></i> HTML</h5>
+                    <p class="card-text">HTML (HyperText Markup Language) is the standard language used to create and
+                        design web pages.</p>
                 </div>
             </div>
         </div>
     </section>
 
-    <section class="container" id="projects">
+    <section class="projects" id="projects">
         <h2>Projects</h2>
         <div class="row">
             <div class="card mx-auto text-bg-warning mb-3" style="width: 100%;">
@@ -113,7 +117,7 @@
                         <ul>
                             <li>Developed a monitoring system with my team integrating YOLOv8s for object detection and LSTM for motion detection to enhance patient safety and streamline monitoring in ICU environments.</li></ul>
                             
-                           <ul><li>Tech Used: Python, OpenCV, YOLOv8, LSTM, Roboflow, Flask (API)</li>
+                            <ul><li>Tech Used: Python, OpenCV, YOLOv8, LSTM, Roboflow, Flask (API)</li>
                         </ul>
                     </p>
                     <a href="https://github.com/AritriPodde2210/TeleICU-Patient-Monitoring-System" class="btn btn-primary">Github</a>
@@ -124,11 +128,11 @@
                     <h5 class="card-title">University Management System</h5>
                     <p class="card-text">
                         <ul>
-                          <li>
+                            <li>
                             <ul><li>Developed a desktop based application to manage university administrative and academic activities.</li></ul>
                             <br>
                             <ul><li>Tech Used: Java, Java Swing (GUI development), JFrame, MySQL</li></ul>
-                     </li>
+                        </li>
                         </ul>
                     </p>
                     <a href="https://github.com/AritriPodde2210/universitymanagementsystem" class="btn btn-primary">Github</a>
@@ -139,9 +143,9 @@
                     <h5 class="card-title">SortView (Sorting-visualiser)</h5>
                     <p class="card-text">
                         <ul>
-                          <li>
+                            <li>
                             <ul><li>An interactive web application to visually demonstrate and compare the functionality of various sorting algorithms.</li></ul>
-                           <br>
+                            <br>
                             <ul><li>Tech Used: HTML, CSS, JavaScript</li></ul>
                             </li>
                         </ul>
@@ -154,27 +158,35 @@
         </div>
     </section>
 
-    <section class="container" id="contact">
+    <section class="contact" id="contact">
         <h2>Get in touch!</h2>
-        <form action="mailto:aritripodder10@gmail.com" method="post" enctype="text/plain">
-            <div class="mb-3">
-                <label for="name" class="form-label">Name:</label>
-                <input type="text" id="name" name="name" class="form-control" required>
+        <div class="grid">
+            <div class="map">
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3677.305180857514!2d88.38277787350006!3d22.828196023557435!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39f890c04c1a8965%3A0xbd2c2f6b0a4c04f9!2sBasudebpur%20Rd%2C%20Ganguli%20Para%2C%20Shyamnagar%2C%20Kolkata%2C%20Bhatpara%2C%20West%20Bengal%20743127!5e0!3m2!1sen!2sin!4v1720290474641!5m2!1sen!2sin"
+                    width="100%" height="350" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false"
+                    tabindex="0"></iframe>
             </div>
-            <div class="mb-3">
-                <label for="email" class="form-label">Email:</label>
-                <input type="email" id="email" name="email" class="form-control" required>
+            <div class="form-container">
+                <form action="mailto:aritripodder10@gmail.com" method="post" enctype="text/plain">
+                    <div class="">
+                        <label for="name" class="form-label">Name:</label>
+                        <input type="text" id="name" name="name" class="form-control" required>
+                    </div>
+                    <div class="">
+                        <label for="email" class="form-label">Email:</label>
+                        <input type="email" id="email" name="email" class="form-control" required>
+                    </div>
+                    <div class="">
+                        <label for="message" class="form-label">Message:</label>
+                        <textarea id="message" name="message" class="form-control" rows="4" required></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-primary">Send</button>
+                </form>
             </div>
-            <div class="mb-3">
-                <label for="message" class="form-label">Message:</label>
-                <textarea id="message" name="message" class="form-control" rows="4" required></textarea>
-            </div>
-            <button type="submit" class="btn btn-primary">Send</button>
-        </form>
-        <div class="map mt-4">
-            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3677.305180857514!2d88.38277787350006!3d22.828196023557435!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39f890c04c1a8965%3A0xbd2c2f6b0a4c04f9!2sBasudebpur%20Rd%2C%20Ganguli%20Para%2C%20Shyamnagar%2C%20Kolkata%2C%20Bhatpara%2C%20West%20Bengal%20743127!5e0!3m2!1sen!2sin!4v1720290474641!5m2!1sen!2sin" width="100%" height="350" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
         </div>
     </section>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+
+    <!-- <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script> -->
 </body>
 </html>
