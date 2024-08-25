@@ -1,0 +1,152 @@
+/* Import Tailwind CSS */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Custom styles */
+:root {
+  --primary-color: #e7b719;
+  --primary-dark: #1F252E;
+  --background-color: #f4f4f9;
+  --text-color: #333;
+  --secondary-color: #ffc107;
+}
+
+body {
+  @apply bg-gray-100 text-gray-800;
+  font-family: 'Outfit', sans-serif;
+  line-height: 1.6;
+}
+
+header {
+  @apply fixed top-0 left-0 w-full bg-gray-900 text-white shadow-md;
+  z-index: 1000;
+}
+
+.page-header {
+  @apply flex justify-between items-center py-4 px-8 bg-gray-900 text-white;
+}
+
+.main {
+  @apply w-full min-h-screen grid place-items-center gap-4;
+}
+
+.main img {
+  @apply max-w-full h-full object-cover rounded-full shadow-md;
+}
+
+.main h1 {
+  @apply text-3xl mb-4;
+}
+
+.main h2 {
+  @apply text-2xl mb-4;
+}
+
+.main span {
+  @apply text-primary-500 font-bold;
+}
+
+.grid-item1 {
+  @apply grid-column-1 pt-20 pr-40;
+}
+
+.grid-item2 {
+  @apply grid-column-2;
+}
+
+.profile-picture {
+  @apply p-2 border-4 border-primary-500 rounded-full;
+}
+
+.social {
+  @apply flex gap-4 pt-6;
+}
+
+.social a {
+  @apply text-primary-500 text-2xl transition duration-300;
+}
+
+.social a:hover {
+  @apply text-secondary-500;
+}
+
+/* About Section */
+.about-section {
+  @apply min-h-screen py-20 px-12 bg-gray-200 mb-10;
+}
+
+.about-section h2 {
+  @apply text-2xl font-bold underline decoration-primary-500 mb-4;
+}
+
+.about-section p {
+  @apply text-lg px-12;
+}
+
+/* Skills Section */
+.skills {
+  @apply min-h-screen py-20 px-12 mb-10;
+}
+
+.skills h2 {
+  @apply text-2xl font-bold underline decoration-primary-500 mb-6;
+}
+
+.skill-grid {
+  @apply grid grid-cols-3 gap-6 px-12;
+}
+
+.skill-grid .grid-item {
+  @apply bg-primary-500 text-white p-6 rounded-md shadow-md;
+}
+
+.skill-grid .grid-item h5 {
+  @apply text-lg font-bold mb-4;
+}
+
+.skill-grid .grid-item p {
+  @apply text-sm;
+}
+
+/* Contact Form */
+.contact {
+  @apply min-h-screen py-20 px-12 mb-10;
+}
+
+.contact .grid {
+  @apply grid grid-cols-2 gap-4;
+}
+
+.contact h2 {
+  @apply text-2xl font-bold underline decoration-primary-500 mb-6;
+}
+
+.map {
+  @apply rounded-md overflow-hidden;
+}
+
+form {
+  @apply grid gap-4;
+}
+
+form label {
+  @apply font-bold;
+}
+
+form input, form textarea {
+  @apply p-2 border border-gray-300 rounded-md;
+}
+
+form button {
+  @apply bg-primary-500 text-white p-2 rounded-md shadow-md;
+}
+
+form button:hover {
+  @apply bg-secondary-500;
+}
+
+/* Footer */
+.footer {
+  @apply bg-gray-900 text-white text-center py-4;
+}
